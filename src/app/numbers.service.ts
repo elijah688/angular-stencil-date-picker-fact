@@ -15,7 +15,7 @@ export class NumbersService {
 
   getDateFact(date:Date):void{
     const day:number = date.getDate();
-    const month:number = date.getMonth();
+    const month:number = date.getMonth()+1;
 
     const numbersAPIUrl:string = `${environment.numbersAPI}${month}/${day}/date`
     
